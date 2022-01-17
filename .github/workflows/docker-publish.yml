@@ -54,4 +54,4 @@ jobs:
         with:
           context: ./${{ matrix.target }}
           push: true
-          tags: ghcr.io/cdsl-research/${{ matrix.target }}:${{ env.DOCKER_TAG }}
+          tags: ghcr.io/docker-images/${{ matrix.target }}:${{ env.DOCKER_TAG }}
