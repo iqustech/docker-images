@@ -19,7 +19,6 @@ pytest
 pytest-xdist
 python-dateutil
 requests
-scrapy
 scrapy-splash
 selenium
 slack_log_handler
