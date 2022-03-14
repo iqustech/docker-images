@@ -20,6 +20,7 @@ pytest-xdist
 python-dateutil
 requests
 scrapy-splash
+Scrapy
 selenium
 slack_log_handler
 slackweb
