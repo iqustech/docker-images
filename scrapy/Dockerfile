@@ -5,7 +5,7 @@ FROM python:3.8-slim
 COPY --from=ffmpeg / /
 COPY requirements.txt /root
 
-RUN apt-get install -y --no-install-recommends tini wget curl fonts-ipafont git  \ 
+RUN apt-get update && apt-get install -y --no-install-recommends tini wget curl fonts-ipafont git  \ 
 	python3-setuptools task-spooler \ 
 	gcc g++ build-essential cmake jq poppler-utils \
 	python3 python3-dev python3-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev && \
