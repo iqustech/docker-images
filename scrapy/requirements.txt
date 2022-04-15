@@ -33,4 +33,5 @@ youtube_dl
 aiofiles
 boto3
 yt-dlp
+ffmpeg-python
 
