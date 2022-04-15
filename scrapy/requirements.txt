@@ -32,4 +32,5 @@ uvicorn
 youtube_dl
 aiofiles
 boto3
+yt-dlp
 
