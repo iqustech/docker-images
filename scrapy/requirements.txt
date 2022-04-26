@@ -34,4 +34,5 @@ aiofiles
 boto3
 yt-dlp
 ffmpeg-python
+PySocks
 
