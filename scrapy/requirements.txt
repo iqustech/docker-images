@@ -35,4 +35,5 @@ boto3
 yt-dlp
 ffmpeg-python
 PySocks
-
+namedivider-python
+pykakasi
