@@ -37,3 +37,4 @@ ffmpeg-python
 PySocks
 namedivider-python
 pykakasi
+js2py
