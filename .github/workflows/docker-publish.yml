@@ -34,7 +34,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        target: ["scrapy","emq"]
+        target: ["scrapy"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
