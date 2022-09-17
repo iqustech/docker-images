@@ -38,5 +38,4 @@ PySocks
 namedivider-python
 pykakasi
 js2py
-psycopg2-binary
-py-postgresql
+psycopg
