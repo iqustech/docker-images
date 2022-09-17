@@ -38,4 +38,4 @@ PySocks
 namedivider-python
 pykakasi
 js2py
-psycopg2
+psycopg2-binary
