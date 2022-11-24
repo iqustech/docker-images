@@ -42,3 +42,4 @@ psycopg
 pyopenssl==22.0.0
 asana
 kanboard
+python-wekan
