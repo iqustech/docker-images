@@ -41,4 +41,8 @@ js2py
 psycopg
 # pyopenssl==22.0.0
 pyopenssl
+<<<<<<< HEAD
 python-redmine
+=======
+python-redmine
+>>>>>>> 756756d9e74a825e3082f7a707fd995afc0168e9
