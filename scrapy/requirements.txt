@@ -1,6 +1,6 @@
 cmake
 Appium-Python-Client
-chromedriver-binary==86.0.4240.22
+# chromedriver-binary==86.0.4240.22
 fake-useragent
 fastapi
 jinja2
