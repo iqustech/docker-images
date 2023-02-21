@@ -1,0 +1,24 @@
+# API Server
+fastapi==0.89.1
+uvicorn==0.20.0
+pywin32; sys_platform == "win32"
+
+tqdm
+
+# TensorRT Diffusion
+numpy==1.23.1
+colored
+cuda-python<12
+diffusers==0.12.1
+ftfy
+matplotlib
+onnx==1.12.0
+--extra-index-url https://pypi.ngc.nvidia.com
+onnx-graphsurgeon==0.3.25
+onnxruntime==1.13.1
+polygraphy==0.43.1
+scipy
+transformers==4.24.0
+
+# Pre-commit
+pre-commit
