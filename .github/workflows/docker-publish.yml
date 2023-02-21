@@ -34,7 +34,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        target: ["scrapy"]
+        target: ["scrapy","stable-diffusion-k8s"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
