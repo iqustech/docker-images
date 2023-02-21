@@ -27,7 +27,7 @@ RUN cd  /usr/local/cuda-11.8/targets/x86_64-linux/lib/ \
 
 ENV LD_LIBRARY_PATH /usr/local/cuda-11.8/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
 
-COPY . /app
+COPY ./lsmith/ /app
 
 WORKDIR /app
 
