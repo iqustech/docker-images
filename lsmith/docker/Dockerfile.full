@@ -3,7 +3,7 @@ FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu20.04 as tensorrt
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update \
-    && apt install software-properties-common -y \
+    && apt install -no-install-recommends software-properties-common -y \
     && add-apt-repository --yes ppa:deadsnakes/ppa
 
 RUN apt update && apt install -no-install-recommends build-essential curl git-core -y > /dev/null
@@ -34,7 +34,7 @@ FROM nvidia/cuda:11.8.0-runtime-ubuntu20.04 as main
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update \
-    && apt install -no-install-recommends software-properties-common -y  > /dev/null\
+    && apt install -no-install-recommends software-properties-common -y  > /dev/null \
     && add-apt-repository ppa:deadsnakes/ppa -y  > /dev/null \
     && apt install curl -no-install-recommends -y > /dev/null
 
