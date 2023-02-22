@@ -12,19 +12,19 @@ RUN apt install -no-install-recommends tensorrt=8.5.3.1-1+cuda11.8 tensorrt-dev=
 
 RUN git clone https://github.com/NVIDIA/TensorRT /TensorRT \
     && cd /TensorRT \
-    && git submodule update --init --recursive >  /dev/null
+    && git submodule update --init --recursive
 
 WORKDIR /TensorRT
 
 RUN curl https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-3.25.2-linux-x86_64.sh -L -o ./install_cmake \
     && chmod +x ./install_cmake \
     && mkdir -p /opt/cmake \
-    && ./install_cmake --skip-license --prefix="/opt/cmake" > /dev/null \
+    && ./install_cmake --skip-license --prefix="/opt/cmake" \
     && ln -s /opt/cmake/bin/* /usr/bin \
     && ls -al /opt/cmake
 
 RUN mkdir -p build && cd build \
-    && cmake .. -DTRT_OUT_DIR=$PWD/out > /dev/null \
+    && cmake .. -DTRT_OUT_DIR=$PWD/out \
     && cd plugin \
     && make -j$(nproc) > /dev/null
 
