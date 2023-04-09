@@ -1,18 +1,18 @@
 FROM node:16.20-slim
 
-WORKDIR /app
+# WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends git
+# RUN apt-get update && apt-get install -y --no-install-recommends git
 
-RUN git clone https://github.com/jspspemu/jspspemu.git 
+# RUN git clone https://github.com/jspspemu/jspspemu.git 
 
-WORKDIR /app/jspspemu
+# WORKDIR /app/jspspemu
 
-RUN yarn build
+# RUN yarn build
 
-EXPOSE 9000
+# EXPOSE 9000
 
-ENTRYPOINT ["yarn","serve"]
+# ENTRYPOINT ["yarn","serve"]
 
 
 
