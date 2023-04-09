@@ -33,7 +33,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        target: ["scrapy-base"]
+        target: ["scrapy-base","aws-base"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
