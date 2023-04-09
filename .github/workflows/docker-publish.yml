@@ -34,7 +34,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        target: ["scrapy"]
+        target: ["scrapy","jspspemu"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
