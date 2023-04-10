@@ -1,10 +1,4 @@
-FROM jrottenberg/ffmpeg:4.2-scratch AS ffmpeg
-
-FROM ghcr.io/iqustech/docker-images/python3-base:main
-
-COPY --from=ffmpeg / /
-
-ENV RUNNER_ALLOW_RUNASROOT=0
+FROM python:3.8-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends tini wget curl fonts-ipafont git python3-setuptools \ 
 	gcc g++ build-essential cmake jq poppler-utils \
