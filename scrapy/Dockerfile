@@ -10,4 +10,6 @@ RUN pip3 install -r /root/requirements.txt
 
 WORKDIR /workspace
 
-ENTRYPOINT [ "watch ls" ]
+RUN touch /var/log/tailfile
+
+ENTRYPOINT [ "tail","-f","/var/log/tailfile" ]
