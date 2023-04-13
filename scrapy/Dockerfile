@@ -9,3 +9,5 @@ COPY requirements.txt /root
 RUN pip3 install -r /root/requirements.txt
 
 WORKDIR /workspace
+
+ENTRYPOINT [ "/bin/bash" ]
