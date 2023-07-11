@@ -33,7 +33,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        target: ["python3-base"]
+        target: ["python3-base","php-base"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
