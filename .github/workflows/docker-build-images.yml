@@ -114,7 +114,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        target: ["scrapy-base","aws-base","redmine"]
+        target: ["aws-base","redmine","scrapy-base"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
